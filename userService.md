@@ -1,4 +1,4 @@
-### User Service
+# User Service
 | Path                     | Method | Request         | Response | ResponseCodes | Description            |
 | ----------------------- | ------ | --------------- | -------- | ------------- | ---------------------- |
 | "/users/"              | GET    | NONE                    | User[]   | 200           | Get all users     |
