@@ -1,7 +1,7 @@
 #Entities
 ### ApplicationUser : IdentityUser
 
-| Property Name | Data Type | Description                  |
+| **Property Name** | **Data Type** | **Description**                  |
 | ------------- | --------- | ---------------------------- |
 | FirstName     | string    | First name of user           |
 | LastName      | string    | Last name of user            |
