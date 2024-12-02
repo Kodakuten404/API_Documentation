@@ -1,5 +1,5 @@
 # User Service
-| Path                     | Method | Request         | Response | ResponseCodes | Description            |
+| **Path**                | **Method** | **Request** | **Response** | **ResponseCodes** | **Description** |
 | ----------------------- | ------ | --------------- | -------- | ------------- | ---------------------- |
 | "/users/"              | GET    | NONE                    | User[]   | 200           | Get all users     |
 | "/users/{userId}"      | GET    | int userId              | User     | 200, 404      | Get user by id    |
