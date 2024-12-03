@@ -31,7 +31,7 @@
 | Name              | string        |
 | Instructions      | string        |
 | Ingredients       | Ingredient[]  |
-| Tag               | CategoryTag[] |
+| TagIds            | Guid[]        |
 | ReviewIds         | Guid[]        |
 
 ### Review : IEntity
