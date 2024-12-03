@@ -9,7 +9,13 @@
 | Email             | string        |
 | Favorites         | Recipe[]      |
 | Reviews           | Review[]      |
-| Token             | TokenF        |
+| Token             | Token         |
+
+### CategoryTag : IEntity
+
+| **Property Name** | **Data Type** |
+| ----------------- | ------------- |
+| Name              | string        |
 
 ### Ingredient : IEntity
 
@@ -19,12 +25,6 @@
 | Amount            | double        |
 | Unit              | string        |
 
-### Category : IEntity
-
-| **Property Name** | **Data Type** |
-| ----------------- | ------------- |
-| Name              | string        |
-
 ### Recipe : IEntity
 
 | **Property Name** | **Data Type** |
@@ -32,7 +32,7 @@
 | Name              | string        |
 | Instructions      | string        |
 | Ingredients       | Ingredient[]  |
-| Category          | Category[]    |
+| Tag               | CategoryTag[] |
 | Review            | Review[]      |
 
 ### Review : IEntity
@@ -45,13 +45,26 @@
 | ReviewText        | string           |
 | Rating            | Enum.ReviewScore |
 
-### Token
+### Token : IEntity
 
 | **Property Name** | **Data Type** |
 | ----------------- | ------------- |
-| Id                | int           |
 | AccessToken       | string        |
 | CreatedAt         | DateTime      |
+
+### NotificationBase : IEntity
+
+| **Property Name** | **Data Type**    |
+| ----------------- | ---------------- |
+| UserId            | Guid             |
+| SentAt            | DateTime         |
+| Subscriptions     | string[]         |
+| NotificationType  | NotificationType |
+
+### NotificationType : IEntity
+
+| **Property Name** | **Data Type** |
+| ----------------- | ------------- |
 
 ## Interfaces
 
@@ -59,4 +72,4 @@
 
 | **Property Name** | **Data Type** |
 | ----------------- | ------------- |
-| Id                | Int           |
+| Id                | Guid          |
