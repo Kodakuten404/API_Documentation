@@ -33,15 +33,15 @@
 | Instructions      | string        |
 | Ingredients       | Ingredient[]  |
 | Tag               | CategoryTag[] |
-| Review            | Review[]      |
+| ReviewIds         | Guid[]        |
 
 ### Review : IEntity
 
 | **Property Name** | **Data Type**    |
 | ----------------- | ---------------- |
 | DatePublished     | DateTime         |
-| Author            | User             |
-| Recipe            | Recipe           |
+| AuthorId          | Guid             |
+| RecipeId          | Guid             |
 | ReviewText        | string           |
 | Rating            | Enum.ReviewScore |
 

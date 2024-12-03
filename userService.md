@@ -11,3 +11,5 @@
 | "/users/"              | POST       | User         | NONE         | 200, 400          | Add new user      |
 | "/users/{userId}"      | PUT        | int User     | NONE         | 200, 404          | Update user info  |
 | "/users/{userId}"      | DELETE     | int userId   | NONE         | 200, 404          | Delete user       |
+
+### Comments
