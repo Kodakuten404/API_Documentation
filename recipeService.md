@@ -8,7 +8,7 @@
 | "/ingredients/{ingredientId}"        | GET        | Guid ingredientId     | Ingredient   | 200, 400          | Get by id           |
 | "/ingredients/name/{ingredientName}" | GET        | string ingredientName | Ingredient   | 200, 400          | Get by name         |
 | "/ingredients/"                      | POST       | Ingredient            | NONE         | 200, 404          | Add ingredient      |
-| "/ingredients/"                      | DELETE     | Guid ingredientId     | NONE         | 200, 404          | Delete ingredient   |
+| "/ingredients/{ingredientId}"        | DELETE     | Guid ingredientId     | NONE         | 200, 404          | Delete ingredient   |
 
 ## Category Endpoints
 
@@ -18,7 +18,7 @@
 | "/categories/{categoryId}"        | GET        | Guid categoryId     | Category     | 200, 400          | Get by id          |
 | "/categories/name/{categoryName}" | GET        | string categoryName | Category     | 200, 400          | Get by name        |
 | "/categories/"                    | POST       | Category            | NONE         | 200, 404          | Add category       |
-| "/categories/"                    | DELETE     | Guid categoryId     | NONE         | 200, 404          | Delete category    |
+| "/categories/{categoryId}"        | DELETE     | Guid categoryId     | NONE         | 200, 404          | Delete category    |
 
 ## Recipe Endpoints
 
@@ -28,4 +28,4 @@
 | "/recipes/{recipeId}"        | GET        | Guid recipeId     | Recipe       | 200, 400          | Get by id       |
 | "/recipes/name/{recipeName}" | GET        | string recipeName | Recipe       | 200, 400          | Get by name     |
 | "/recipes/"                  | POST       | Recipe            | NONE         | 200, 404          | Add recipe      |
-| "/recipes/"                  | DELETE     | Guid recipeId     | NONE         | 200, 404          | Delete recipe   |
+| "/recipes/{recipeId}"        | DELETE     | Guid recipeId     | NONE         | 200, 404          | Delete recipe   |

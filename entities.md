@@ -51,13 +51,31 @@
 | AccessToken       | string        |
 | CreatedAt         | DateTime      |
 
-### NotificationBase : IEntity
+### Notification
 
 | **Property Name** | **Data Type**    |
 | ----------------- | ---------------- |
-| UserId            | Guid             |
 | SentAt            | DateTime         |
-| Subscriptions     | string[]         |
+| Topic             | Enum.Topics      |
+| Message           | string           |
+| NotificationType  | NotificationType |
+
+### Subscriber : IEntity
+
+| **Property Name** | **Data Type** |
+| ----------------- | ------------- |
+| UserId            | Guid          |
+| UserEmail         | string        |
+| RegisteredAt      | DateTime      |
+
+### NotificationLog : IEntity
+
+| **Property Name** | **Data Type**    |
+| ----------------- | ---------------- |
+| UserId            | Guid[]           |
+| SentAt            | DateTime         |
+| Topic             | Enum.Topics      |
+| Message           | string           |
 | NotificationType  | NotificationType |
 
 ### NotificationType : IEntity
