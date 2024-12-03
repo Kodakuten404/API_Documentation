@@ -7,8 +7,7 @@
 | UserName          | string        |
 | Password          | string        |
 | Email             | string        |
-| Favorites         | Recipe[]      |
-| Reviews           | Review[]      |
+| FavoriteIds       | Guid[]        |
 | Token             | Token         |
 
 ### CategoryTag : IEntity
