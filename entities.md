@@ -18,11 +18,13 @@
 
 ### Ingredient : IEntity
 
-| **Property Name** | **Data Type** |
-| ----------------- | ------------- |
+| **Property Name** | **Data Type** | **Comment** |
+| ----------------- | ------------- | ----------- |
 | Name              | string        |
 | Amount            | double        |
 | Unit              | string        |
+| RecipeId          | Guid          | FK          |
+| Recipe            | Recipe        | FK          |
 
 ### Recipe : IEntity
 
@@ -31,7 +33,7 @@
 | Name              | string        |
 | Instructions      | string        |
 | Ingredients       | Ingredient[]  |
-| TagIds            | Guid[]        |
+| CategoryTags      | CategoryTag[] |
 | ReviewIds         | Guid[]        |
 
 ### Review : IEntity
