@@ -22,11 +22,12 @@
 
 ## Recipe Endpoints
 
-| **Path**                     | **Method** | **Request**       | **Response**      | **ResponseCodes** | **Description**             |
-| ---------------------------- | ---------- | ----------------- | ----------------- | ----------------- | --------------------------- |
-| "/recipes/"                  | GET        | NONE              | IResult, Recipe[] | 201               | Get all recipes             |
-| "/recipes/{recipeId}"        | GET        | Guid recipeId     | IResult, Recipe   | 200, 404          | Get by id                   |
-| "/recipes/name/{recipeName}" | GET        | string recipeName | IResult, Recipe   | 200, 404          | Get by name                 |
-| "/recipes/ingredients/{id}"  | GET        | string id         | IResult, Recipe   | 200, 404          | Get recipe with ingredients |
-| "/recipes/"                  | POST       | Recipe            | IResult           | 200, 400          | Add recipe                  |
-| "/recipes/{recipeId}"        | DELETE     | Guid recipeId     | IResult           | 200, 404          | Delete recipe               |
+| **Path**                     | **Method** | **Request**       | **Response**      | **ResponseCodes** | **Description**                  |
+| ---------------------------- | ---------- | ----------------- | ----------------- | ----------------- | -------------------------------- |
+| "/recipes/"                  | GET        | NONE              | IResult, Recipe[] | 201               | Get all recipes                  |
+| "/recipes/{recipeId}"        | GET        | Guid recipeId     | IResult, Recipe   | 200, 404          | Get by id                        |
+| "/recipes/name/{recipeName}" | GET        | string recipeName | IResult, Recipe   | 200, 404          | Get by name                      |
+| "/recipes/ingredients/{id}"  | GET        | string id         | IResult, Recipe   | 200, 404          | Get recipe with ingredients      |
+| "/recipes/ingredients/"      | GET        | NONE              | IResult, Recipe[] | 200, 404          | Get all recipes with ingredients |
+| "/recipes/"                  | POST       | Recipe            | IResult           | 200, 400          | Add recipe                       |
+| "/recipes/{recipeId}"        | DELETE     | Guid recipeId     | IResult           | 200, 404          | Delete recipe                    |
