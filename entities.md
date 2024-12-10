@@ -7,7 +7,7 @@
 | UserName          | string        |
 | Password          | string        |
 | Email             | string        |
-| FavoriteIds       | Guid[]        |
+| FavoriteIds       | string        |
 | Token             | Token         |
 
 ### CategoryTag : IEntity
@@ -50,8 +50,9 @@
 
 | **Property Name** | **Data Type** |
 | ----------------- | ------------- |
-| AccessToken       | string        |
+| UserId            | Guid          |
 | CreatedAt         | DateTime      |
+| User              | User          |
 
 ### Notification
 
