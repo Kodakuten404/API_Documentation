@@ -1,10 +1,14 @@
-**Recipe Service**: 8080 - 8081
+**Recipe Service**: 8080
+SQL Port: 1433
 
-**Review Service**: 8082 - 8083
+**Review Service**: 8082
+SQL Port: 1434
 
-**Notification Service**: 8084 - 8085
+**Notification Service**: 8084
+SQL Port: 1435
 
-**User Service**: 8086 - 8087
+**User Service**: 8086
+SQL Port: 1436
 
 ---
 
