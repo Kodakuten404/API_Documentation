@@ -8,5 +8,3 @@
 | "/users/"              | POST       | User                         | NONE         | 200, 400          | Add new user              |
 | "/users/"              | PATCH      | Guid userId, Guid favoriteId | NONE         | 200, 400          | Update user with favorite |
 | "/users/{userId}"      | DELETE     | Guid userId                  | NONE         | 200, 404          | Delete user               |
-
-### Comments
