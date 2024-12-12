@@ -1,13 +1,13 @@
 # API Gateway Routes
 
-## Recipe Service
+## Recipe Service - Categories
 
 | Path                  | Method | Request  | Response          | ResponseCodes | Description        |
 | --------------------- | ------ | -------- | ----------------- | ------------- | ------------------ |
 | "/gateway/categories" | POST   | Category | IResult           | 200, 400      | Add category       |
 | "/gateway/categories" | GET    | NONE     | IResult, Recipe[] | 200, 404      | Get all categories |
 
-## Recipe Service - Categories
+## Recipe Service
 
 | Path                         | Method | Request                          | Response          | ResponseCodes | Description                      |
 | ---------------------------- | ------ | -------------------------------- | ----------------- | ------------- | -------------------------------- |
