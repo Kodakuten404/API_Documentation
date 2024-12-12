@@ -17,3 +17,14 @@
 | "/gateway/ingredients/"      | GET    | NONE                             | IResult, Recipe[] | 200, 404      | Get all recipes with ingredients |
 | "/gateway/review/{recipeId}" | PUT    | string recipeId, string reviewId | IResult           | 200, 404      | Add review to recipe             |
 | "/gateway/tag/{recipeId}"    | PUT    | string recipeId, string tagName  | IResult           | 200, 404      | Add tag to recipe                |
+
+# Review Service
+
+| **Path**                         | **Method** | **Request**                                 | **Response** | **ResponseCodes** | **Description**                           |
+| -------------------------------- | ---------- | ------------------------------------------- | ------------ | ----------------- | ----------------------------------------- |
+| "/reviews/"                      | GET        | NONE                                        | Review[]     | 200               | Get all reviews                           |
+| "/reviews/{reviewId}"            | GET        | Guid reviewId                               | Review       | 200, 404          | Get review by id                          |
+| "/reviews/recipe/{recipeId}"     | GET        | Guid recipeId                               | Review[]     | 200, 404          | Get reviews by recipe id                  |
+| "/reviews/author/{authorId}"     | GET        | Guid authorId                               | Review[]     | 200, 404          | Get reviews by author id                  |
+| "/reviews/{authorId}/{recipeId}" | POST       | Review                                      | NONE         | 200, 400          | Add new review                            |
+| "/reviews/{reviewId}"            | DELETE     | Guid reviewId                               | NONE         | 200, 404          | Delete review                             |
