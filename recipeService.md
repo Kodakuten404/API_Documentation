@@ -30,6 +30,6 @@
 | "/recipes/ingredients/{id}"  | GET        | string id                        | IResult, Recipe   | 200, 404          | Get recipe with ingredients      |
 | "/recipes/ingredients/"      | GET        | NONE                             | IResult, Recipe[] | 200, 404          | Get all recipes with ingredients |
 | "/recipes/"                  | POST       | CreateRecipeDto                  | IResult           | 200, 400          | Add recipe                       |
-| "/recipes/review/{id}"       | PATCH      | string recipeId, string reviewId | IResult           | 200, 404          | Add review to recipe             |
-| "/recipes/tag/{id}"          | PATCH      | string recipeId, string tagName  | IResult           | 200, 404          | Add tag to recipe                |
+| "/recipes/review/{id}"       | PUT      | string recipeId, string reviewId | IResult           | 200, 404          | Add review to recipe             |
+| "/recipes/tag/{id}"          | PUT      | string recipeId, string tagName  | IResult           | 200, 404          | Add tag to recipe                |
 | "/recipes/{recipeId}"        | DELETE     | string recipeId                  | IResult           | 200, 404          | Delete recipe                    |
