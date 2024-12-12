@@ -1,12 +1,19 @@
 # API Gateway Routes
 
 ## Recipe Service
-| Path                  | Method | Request | Response          | ResponseCodes | Description        |
-| --------------------- | ------ | ------- | ----------------- | ------------- | ------------------ |
-| "/gateway/categories" | GET    | NONE    | IResult, Recipe[] | 200, 404      | Get all categories |
-|"/gateway/categories"|POST|Category|IResult|200, 400|Add category|
+
+| Path                  | Method | Request  | Response          | ResponseCodes | Description        |
+| --------------------- | ------ | -------- | ----------------- | ------------- | ------------------ |
+| "/gateway/categories" | POST   | Category | IResult           | 200, 400      | Add category       |
+| "/gateway/categories" | GET    | NONE     | IResult, Recipe[] | 200, 404      | Get all categories |
 
 ## Recipe Service - Categories
-| Path                  | Method | Request | Response          | ResponseCodes | Description        |
-| --------------------- | ------ | ------- | ----------------- | ------------- | ------------------ |
-| "/gateway/recipes"    | GET    | NONE    | IResult, Recipe[] | 200, 404      | Get all recipes    |
+
+| Path                         | Method | Request                          | Response          | ResponseCodes | Description                      |
+| ---------------------------- | ------ | -------------------------------- | ----------------- | ------------- | -------------------------------- |
+| "/gateway/recipes"           | POST   | Recipe                           | IResult           | 200, 400      | Add recipe                       |
+| "/gateway/recipes"           | GET    | NONE                             | IResult, Recipe[] | 200, 404      | Get all recipes                  |
+| "/gateway/name/{recipeName}" | GET    | string recipeName                | IResult, Recipe   | 200, 404      | Get recipe by name               |
+| "/gateway/ingredients/"      | GET    | NONE                             | IResult, Recipe[] | 200, 404      | Get all recipes with ingredients |
+| "/gateway/review/{recipeId}" | PUT    | string recipeId, string reviewId | IResult           | 200, 404      | Add review to recipe             |
+| "/gateway/tag/{recipeId}"    | PUT    | string recipeId, string tagName  | IResult           | 200, 404      | Add tag to recipe                |
