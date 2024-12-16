@@ -37,3 +37,20 @@
 | "gateway/notifications/unsubscribe/{userId}"      | DELETE     | Guid userId  | NONE            | 200, 400          | Unsubscribe user          |
 | "gateway/notifications/notify/{notification}"       | POST       | Notification | NONE            | 200, 400          | Notify subscribers        |
 | "gateway/notifications/logs"              | GET        | NONE         | NotificationLog[] | 200               | Get all notification logs |
+
+
+## User Service
+
+| **Path**                      | **Method** | **Request**  | **Response**    | **ResponseCodes** | **Description**                               |
+| ---------------------------- | ------ | -------------------------------- | ----------------- | ------------- | -------------------------------- |
+| "/gateway/user"              | POST   | User                             | IResult           | 201, 400      | Add User                         |
+| "/gateway/user"              | GET    | NONE                             | IResult, user[]   | 200, 404      | Get all users                    |
+| "/gateway/user"              | DELETE | Guid userId                      | IResult           | 200, 404      | Delete user                      |
+| "/gateway/users/Id/{userId}" | GET    | Guid userId                      | IResult, user     | 200, 404      | Get user by id                   |
+| "/gateway/users/Email/{email}| GET    | string email                     | IResult, user     | 200, 404      | Get user by email                |
+| "/gateway/users/token/getToken"| POST | Guid userid                      | IResult, token    | 201, 404      | Add token to user                |
+| "/gateway/users/token/validate/{userId}"| POST | Guid userId, string accessCode | IResult, bool | 200, 401      | Validate user token           |
+| "/gateway/users/favorite/{userId}"| GET | Guid userId                    | IResult, Guid[]    | 200, 404      | Get favorites from user          |
+| "/gateway/users/favorite/{userId}""| POST | Guid userid, Guid favoriteId | IResult           | 201, 404      | Add favorite to user             |
+
+
