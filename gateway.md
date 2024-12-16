@@ -33,9 +33,9 @@
 
 | **Path**                      | **Method** | **Request**  | **Response**    | **ResponseCodes** | **Description**           |
 | ----------------------------- | ---------- | ------------ | --------------- | ----------------- | ------------------------- |
-| "gateway/notifications/subscribe/{user}" | POST       | Subscriber user  | NONE            | 200, 404          | Subscribe user            |
+| "gateway/notifications/subscribe/{user}" | POST       | SubscriberDto subscriber  | NONE            | 200, 404          | Subscribe user            |
 | "gateway/notifications/unsubscribe/{userId}"      | DELETE     | Guid userId  | NONE            | 200, 400          | Unsubscribe user          |
-| "gateway/notifications/notify/{notification}"       | POST       | Notification | NONE            | 200, 400          | Notify subscribers        |
+| "gateway/notifications/notify/{notification}"       | POST       | NotificationDto notification| NONE            | 200, 400          | Notify subscribers        |
 | "gateway/notifications/logs"              | GET        | NONE         | NotificationLog[] | 200, 404               | Get all notification logs |
 
 
