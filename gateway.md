@@ -26,7 +26,7 @@
 | "/gateway/reviews/{reviewId}"            | GET        | Guid reviewId                               | Review       | 200, 404          | Get review by id                          |
 | "/gateway/reviews/recipe/{recipeId}"     | GET        | Guid recipeId                               | Review[]     | 200, 404          | Get reviews by recipe id                  |
 | "/gateway/reviews/author/{authorId}"     | GET        | Guid authorId                               | Review[]     | 200, 404          | Get reviews by author id                  |
-| "/gateway/reviews/{authorId}/{recipeId}" | POST       | Review, authorId, recipeId                  | NONE         | 201, 400          | Add new review                            |
+| "/gateway/reviews/{authorId}/{recipeId}" | POST       | ReviewDTO, authorId, recipeId               | NONE         | 201, 400          | Add new review                            |
 | "/gateway/reviews/{reviewId}"            | DELETE     | Guid reviewId                               | NONE         | 200, 404          | Delete review                             |
 
 ## Notification Service
@@ -43,7 +43,7 @@
 
 | **Path**                      | **Method** | **Request**  | **Response**    | **ResponseCodes** | **Description**                               |
 | ---------------------------- | ------ | -------------------------------- | ----------------- | ------------- | -------------------------------- |
-| "/gateway/user"              | POST   | User                             | IResult           | 201, 400      | Add User                         |
+| "/gateway/user"              | POST   | UserDto                          | IResult           | 201, 400      | Add User                         |
 | "/gateway/user"              | GET    | NONE                             | IResult, user[]   | 200, 404      | Get all users                    |
 | "/gateway/user"              | DELETE | Guid userId                      | IResult           | 200, 404      | Delete user                      |
 | "/gateway/users/Id/{userId}" | GET    | Guid userId                      | IResult, user     | 200, 404      | Get user by id                   |
