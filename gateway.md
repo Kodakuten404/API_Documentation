@@ -28,3 +28,12 @@
 | "/gateway/reviews/author/{authorId}"     | GET        | Guid authorId                               | Review[]     | 200, 404          | Get reviews by author id                  |
 | "/gateway/reviews/{authorId}/{recipeId}" | POST       | Review                                      | NONE         | 200, 400          | Add new review                            |
 | "/gateway/reviews/{reviewId}"            | DELETE     | Guid reviewId                               | NONE         | 200, 404          | Delete review                             |
+
+## Notification Service
+
+| **Path**                      | **Method** | **Request**  | **Response**    | **ResponseCodes** | **Description**           |
+| ----------------------------- | ---------- | ------------ | --------------- | ----------------- | ------------------------- |
+| "gateway/notifications/subscribe/{user}" | POST       | Subscriber user  | NONE            | 200, 404          | Subscribe user            |
+| "gateway/notifications/unsubscribe/{userId}"      | DELETE     | Guid userId  | NONE            | 200, 400          | Unsubscribe user          |
+| "gateway/notifications/notify/{notification}"       | POST       | Notification | NONE            | 200, 400          | Notify subscribers        |
+| "gateway/notifications/logs"              | GET        | NONE         | NotificationLog[] | 200               | Get all notification logs |
