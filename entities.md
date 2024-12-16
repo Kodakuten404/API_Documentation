@@ -8,6 +8,7 @@
 | Password          | string        |
 | Email             | string        |
 | FavoriteIds       | string        |
+| TokenId           | Guid FK       |
 | Token             | Token         |
 
 ### CategoryTag : IEntity
@@ -52,7 +53,7 @@
 | ----------------- | ------------- |
 | UserId            | Guid          |
 | CreatedAt         | DateTime      |
-| User              | User          |
+| UserId            | Guid FK       |
 
 ### Notification
 
