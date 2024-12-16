@@ -11,7 +11,7 @@
 
 | Path                         | Method | Request                          | Response          | ResponseCodes | Description                      |
 | ---------------------------- | ------ | -------------------------------- | ----------------- | ------------- | -------------------------------- |
-| "/gateway/recipes"           | POST   | Recipe                           | IResult           | 201, 400      | Add recipe                       |
+| "/gateway/recipes"           | POST   | CreateRecipeDto                  | IResult           | 201, 400      | Add recipe                       |
 | "/gateway/recipes"           | GET    | NONE                             | IResult, Recipe[] | 200, 404      | Get all recipes                  |
 | "/gateway/name/{recipeName}" | GET    | string recipeName                | IResult, Recipe   | 200, 404      | Get recipe by name               |
 | "/gateway/ingredients/"      | GET    | NONE                             | IResult, Recipe[] | 200, 404      | Get all recipes with ingredients |
