@@ -61,7 +61,6 @@
 | SentAt            | DateTime         |
 | Topic             | Enum.Topics      |
 | Message           | string           |
-| NotificationType  | NotificationType |
 
 ### Subscriber : IEntity
 
@@ -75,16 +74,10 @@
 
 | **Property Name** | **Data Type**    |
 | ----------------- | ---------------- |
-| UserId            | Guid[]           |
+| UserIds         | Guid[]         |
 | SentAt            | DateTime         |
 | Topic             | Enum.Topics      |
 | Message           | string           |
-| NotificationType  | NotificationType |
-
-### NotificationType : IEntity
-
-| **Property Name** | **Data Type** |
-| ----------------- | ------------- |
 
 ## Interfaces
 
