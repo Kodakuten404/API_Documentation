@@ -2,7 +2,7 @@
 
 WhiskTakers is a recipe database with in which users can write reviews, look up recipes and add their own favorites.
 
-### API Documentation
+## API Documentation
 
 ## Services
 - [User Service](https://github.com/Kodakuten404/API_Documentation/blob/main/userService.md)
