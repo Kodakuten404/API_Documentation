@@ -6,7 +6,7 @@
 | "/reviews/{reviewId}"            | GET        | Guid reviewId                               | Review       | 200, 404          | Get review by id                          |
 | "/reviews/recipe/{recipeId}"     | GET        | Guid recipeId                               | Review[]     | 200, 404          | Get reviews by recipe id                  |
 | "/reviews/author/{authorId}"     | GET        | Guid authorId                               | Review[]     | 200, 404          | Get reviews by author id                  |
-| "/reviews/{authorId}/{recipeId}" | POST       | Review, authorId, recipeID                  | NONE         | 201, 400          | Add new review                            |
+| "/reviews/{authorId}/{recipeId}" | POST       | Review, authorId, recipeId                  | NONE         | 201, 400          | Add new review                            |
 | "/reviews/{reviewId}"            | DELETE     | Guid reviewId                               | NONE         | 200, 404          | Delete review                             |
 
 ### Comments
